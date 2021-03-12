@@ -1,0 +1,71 @@
+﻿@model IEnumerable<BankManagwmwntSystemEFWeb.Models.Entities.Loan>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Loan</h1>
+
+<p>
+    <a asp-action="Create">Apply for a Loan</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AccountHolderId)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.TypeOfLoan)
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountHolderId)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeOfLoan)
+                </td>
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.AmountLeft)
+                </td>
+
+
+
+                <td>
+
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

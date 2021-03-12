@@ -1,0 +1,39 @@
+﻿@model BankManagwmwntSystemEFWeb.Models.Entities.Loan
+
+@{ ViewData["Title"] = "Details"; }
+
+<h1>Details</h1>
+
+<h3>Loan Details</h3>
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            Type of Loan
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TypeOfLoan)
+        </dd>
+
+
+        <dt class="col-sm-2">
+            Amount Left
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AmountLeft)
+        </dd>
+
+
+        <dt class="col-sm-2">
+            Loan Date
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LoanDate)
+        </dd>
+
+
+    </dl>
+    <a asp-action="Index" asp-controller="Loan">Back to Loan List</a>
+</div>

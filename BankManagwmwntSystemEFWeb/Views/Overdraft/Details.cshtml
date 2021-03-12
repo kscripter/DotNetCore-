@@ -1,0 +1,25 @@
+﻿@model BankManagwmwntSystemEFWeb.Models.Entities.Overdraft
+
+@{ ViewData["Title"] = "Delete"; }
+
+<h1>Details</h1>
+
+<h3>Overdraft Details</h3>
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Overdraft
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AmountLeft)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OverdraftDate)
+        </dt>
+
+
+    </dl>
+    <a asp-action="Index" asp-controller="Overdraft">Back to List</a>
+</div>

@@ -1,0 +1,44 @@
+﻿@model BankManagwmwntSystemEFWeb.Models.Entities.AccountHolder
+
+@{ ViewData["Title"] = "Details"; }
+
+<h1>Details</h1>
+
+<h3>AccountHolder Details</h3>
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            First Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            Middle Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            AccountNumber
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Account.AccountNumber)
+        </dd>
+    </dl>
+    <a asp-action="Index" asp-controller="AccountHolder">Back to List</a>
+</div>

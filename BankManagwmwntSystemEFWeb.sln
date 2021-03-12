@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankManagwmwntSystemEFWeb", "BankManagwmwntSystemEFWeb\BankManagwmwntSystemEFWeb.csproj", "{E560FE8E-386D-4022-863F-FE2754C0A4F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E560FE8E-386D-4022-863F-FE2754C0A4F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E560FE8E-386D-4022-863F-FE2754C0A4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E560FE8E-386D-4022-863F-FE2754C0A4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E560FE8E-386D-4022-863F-FE2754C0A4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E3CC86D-0763-4BAA-891A-094A81F35D27}
+	EndGlobalSection
+EndGlobal
