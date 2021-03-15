@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankManagwmwntSystemEFWeb.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20210310165819_initialcow2")]
-    partial class initialcow2
+    [Migration("20210315160629_creatednewdatabase")]
+    partial class creatednewdatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,6 +64,9 @@ namespace BankManagwmwntSystemEFWeb.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
+
+                    b.Property<bool>("IsSubscribedToNewsLetter")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -129,18 +132,21 @@ namespace BankManagwmwntSystemEFWeb.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(160)")
+                        .HasMaxLength(160);
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(160)")
+                        .HasMaxLength(160);
 
                     b.Property<string>("MiddleName")
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(256)")
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 

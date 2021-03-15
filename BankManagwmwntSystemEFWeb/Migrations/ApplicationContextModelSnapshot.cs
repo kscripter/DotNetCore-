@@ -63,6 +63,9 @@ namespace BankManagwmwntSystemEFWeb.Migrations
                         .HasColumnType("varchar(255)")
                         .HasMaxLength(255);
 
+                    b.Property<bool>("IsSubscribedToNewsLetter")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("varchar(255)")
@@ -127,18 +130,21 @@ namespace BankManagwmwntSystemEFWeb.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(160)")
+                        .HasMaxLength(160);
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(160)")
+                        .HasMaxLength(160);
 
                     b.Property<string>("MiddleName")
                         .HasColumnType("text");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(256)")
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 

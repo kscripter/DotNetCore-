@@ -4,7 +4,7 @@ using MySql.Data.EntityFrameworkCore.Metadata;
 
 namespace BankManagwmwntSystemEFWeb.Migrations
 {
-    public partial class initialcow2 : Migration
+    public partial class creatednewdatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,7 +21,8 @@ namespace BankManagwmwntSystemEFWeb.Migrations
                     Password = table.Column<string>(maxLength: 255, nullable: false),
                     DateOfBirth = table.Column<DateTime>(nullable: false),
                     PhoneNumber = table.Column<string>(maxLength: 11, nullable: false),
-                    Address = table.Column<string>(maxLength: 255, nullable: false)
+                    Address = table.Column<string>(maxLength: 255, nullable: false),
+                    IsSubscribedToNewsLetter = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -34,11 +35,11 @@ namespace BankManagwmwntSystemEFWeb.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    FirstName = table.Column<string>(nullable: false),
-                    LastName = table.Column<string>(nullable: false),
+                    FirstName = table.Column<string>(maxLength: 160, nullable: false),
+                    LastName = table.Column<string>(maxLength: 160, nullable: false),
                     MiddleName = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: false),
-                    Password = table.Column<string>(nullable: false)
+                    Password = table.Column<string>(maxLength: 256, nullable: false)
                 },
                 constraints: table =>
                 {

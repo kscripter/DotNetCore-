@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankManagwmwntSystemEFWeb.Controllers
 {
 
-    //[Authorize(Roles = "AccountHolder")]
+    [Authorize(Roles = "AccountHolder")]
     public class AccountHolderController : Controller
     {
 

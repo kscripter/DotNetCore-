@@ -28,38 +28,7 @@ namespace BankManagwmwntSystemEFWeb.Models.Entities
 
         public Account Account { get; set; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //public AccountHolder(int id, string firstName, string lastName, string middleName, string email, string password, DateTime dateOfBirth, string phoneNumber, string address) : base(id, firstName, lastName, middleName, email, password)
-        //{
-        //    DateOfBirth = dateOfBirth;
-
-        //    PhoneNumber = phoneNumber;
-
-        //    Address = address;
-        //}
-
-
+        public bool IsSubscribedToNewsLetter { get; set; }
 
 
     }
