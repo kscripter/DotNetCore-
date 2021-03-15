@@ -173,3 +173,4 @@
 /Users/kalimhome/Projects/BankManagwmwntSystemEFWeb/BankManagwmwntSystemEFWeb/obj/Debug/netcoreapp3.1/BankManagwmwntSystemEFWeb.dll
 /Users/kalimhome/Projects/BankManagwmwntSystemEFWeb/BankManagwmwntSystemEFWeb/obj/Debug/netcoreapp3.1/BankManagwmwntSystemEFWeb.pdb
 /Users/kalimhome/Projects/BankManagwmwntSystemEFWeb/BankManagwmwntSystemEFWeb/obj/Debug/netcoreapp3.1/BankManagwmwntSystemEFWeb.genruntimeconfig.cache
+/Users/kalimhome/Projects/BankManagwmwntSystemEFWeb/BankManagwmwntSystemEFWeb/obj/Debug/netcoreapp3.1/BankManagwmwntSystemEFWeb.csprojAssemblyReference.cache

@@ -1,12 +1,19 @@
 ﻿<Properties StartupConfiguration="{E560FE8E-386D-4022-863F-FE2754C0A4F4}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BankManagwmwntSystemEFWeb/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BankManagwmwntSystemEFWeb/Views/Loan/Create.cshtml">
     <Files>
-      <File FileName="BankManagwmwntSystemEFWeb/Startup.cs" Line="38" Column="36" />
+      <File FileName="BankManagwmwntSystemEFWeb/Controllers/AccountHolderController.cs" Line="34" Column="1" />
+      <File FileName="BankManagwmwntSystemEFWeb/Views/Shared/_Layout.cshtml" />
+      <File FileName="BankManagwmwntSystemEFWeb/Models/Details.cs" Line="1" Column="1" />
+      <File FileName="BankManagwmwntSystemEFWeb/Views/Loan/Create.cshtml" Line="70" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BankManagwmwntSystemEFWeb" expanded="True" />
+          <Node name="BankManagwmwntSystemEFWeb" expanded="True">
+            <Node name="BankManagwmwntSystemEFWeb" expanded="True">
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

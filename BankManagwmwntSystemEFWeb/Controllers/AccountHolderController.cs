@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankManagwmwntSystemEFWeb.Controllers
 {
 
-    [Authorize(Roles = "AccountHolder")]
+    //[Authorize(Roles = "AccountHolder")]
     public class AccountHolderController : Controller
     {
 
@@ -149,7 +149,7 @@ namespace BankManagwmwntSystemEFWeb.Controllers
             if (accountHolder == null)
             {
                 ViewBag.Message = "Invalid Username/Password";
-                return RedirectToAction("Login", "Author");
+                return RedirectToAction("Login", "AccountHolder");
             }
             else
             {
@@ -157,7 +157,7 @@ namespace BankManagwmwntSystemEFWeb.Controllers
                 {
                     new Claim(ClaimTypes.Name, $"{accountHolder.FirstName}"),
 
-                    new Claim(ClaimTypes.GivenName, $"{accountHolder.LastName} {accountHolder.LastName}"),
+                    new Claim(ClaimTypes.GivenName, $"{accountHolder.FirstName} {accountHolder.LastName}"),
 
                     new Claim(ClaimTypes.NameIdentifier, accountHolder.Id.ToString()),
 

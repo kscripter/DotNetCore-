@@ -1,8 +1,6 @@
 ﻿@model IEnumerable<BankManagwmwntSystemEFWeb.Models.Entities.Loan>
 
-@{
-    ViewData["Title"] = "Index";
-}
+@{ ViewData["Title"] = "Index"; }
 
 <h1>Loan</h1>
 
@@ -29,6 +27,16 @@
                 @Html.DisplayNameFor(model => model.TypeOfLoan)
             </th>
 
+            <th>
+                @Html.DisplayNameFor(model => model.AmountLeft)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.LoanDate)
+            </th>
+
+
+
 
             <th></th>
         </tr>
@@ -53,16 +61,20 @@
                     @Html.DisplayFor(modelItem => item.TypeOfLoan)
                 </td>
 
-
                 <td>
                     @Html.DisplayFor(modelItem => item.AmountLeft)
                 </td>
 
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoanDate)
+                </td>
+
+
 
 
                 <td>
 
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
 
                 </td>
             </tr>
